@@ -1,5 +1,5 @@
 <?php
- include "../../inc/dbinfo.inc";
+ include "../../../inc/dbinfo.inc";
 
  /* Connect to MySQL and select the database. */
   $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);

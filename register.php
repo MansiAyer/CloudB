@@ -27,7 +27,7 @@ body{
 <?php $title="Bloodbank | Register"; ?>
 <?php require 'head.php'; ?>
 <body>
-  <?php include 'header.php'; ?>
+  <?php //include 'header.php'; ?>
 
     <div class="container cont">
 
@@ -86,11 +86,12 @@ body{
        </div>
     </div>
     <a href="login.php" class="text-center mb-4" title="Click here">Already have account?</a>
+    <a href="main.php" class="text-center mb-4" title="Click here">Back to home</a>
 </div>
 </div>
 </div>
 </div>
-<?php require 'footer.php' ?>
+<?php //require 'footer.php' ?>
 </body>
 </html>
 <?php } ?>

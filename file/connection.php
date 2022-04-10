@@ -1,10 +1,11 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bloodbank";
-$conn = new mysqli($servername, $username, $password, $dbname);
-if(!$conn){
- die('Could not Connect MySql:' .mysql_error());
-}
+ include "../inc/dbinfo.inc";
+
+ /* Connect to MySQL and select the database. */
+  $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
+
+  if (mysqli_connect_errno()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
+
+  $database = mysqli_select_db($conn, DB_DATABASE);
+
 ?>

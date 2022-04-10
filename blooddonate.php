@@ -38,9 +38,28 @@ text-align: center;
 </style>
 <?php $title="Bloodbank | Blood Donate"; ?>
 <?php require 'head.php'; ?>
-<body>
-	<?php require 'header.php'; ?>
+
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="color:black">
+<nav class="navbar navbar-expand-md navbar-custom navbar-dark sticky-top" style="border-bottom: 5px solid black; background-color: black;padding-bottom:10px ;padding-top:10px ">
+<div class="container-fluid">
+  <a class="" href="Userpage.html" style="font-size:25px;color:white;font-weight: bold;">BLOOD BANK SYSTEM</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+</div>
+</div>
+</nav>
+
+
+	<?php //require 'header.php'; ?>
 	<div class="container cont">
+
+		<a href="Userpage.html" class="btn btn-info text-center mb-4" title="Click here">Back to home</a>
 
 		<?php require 'message.php'; ?>
 
@@ -93,7 +112,7 @@ text-align: center;
 	</table>
 
 </div>
-<?php require 'footer.php'; ?>
+<?php //require 'footer.php'; ?>
 </body>
 </html>
 <?php } ?>

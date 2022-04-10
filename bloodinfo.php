@@ -25,16 +25,33 @@
     background-color: white;
 }
 </style>
-<body>
-  <?php require 'header.php'; ?>
+
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="color:black">
+<nav class="navbar navbar-expand-md navbar-custom navbar-dark sticky-top" style="border-bottom: 5px solid black; background-color: black;padding-bottom:10px ;padding-top:10px ">
+<div class="container-fluid">
+  <a class="" href="hospitalpage.html" style="font-size:25px;color:white;font-weight: bold;">BLOOD BANK SYSTEM</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+</div>
+</div>
+</nav>
+
+
+  <?php //require 'header.php'; ?>
 
     <div class="container cont">
 
       <?php require 'message.php'; ?>
-
       <div class="row justify-content-center">
-          
+        
          <div class="col-lg-4 col-md-5 col-sm-6 col-xs-7 mb-5">
+          <a href="hospitalpage.html" class="btn btn-primary text-center mb-4" title="Click here">Back to home</a>
           <div class="card">
             <div class="card-header title">Add blood group available in your hospital</div>
         <div class="card-body">
@@ -104,6 +121,6 @@
 
    </div>
 </div>
-<?php require 'footer.php' ?>
+<?php //require 'footer.php' ?>
 </body>
 <?php } ?>

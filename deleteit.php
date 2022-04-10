@@ -13,7 +13,7 @@ $result = mysqli_query($conn, $sql);
 <!DOCTYPE html>
 <html>
 <?php $title="Bloodbank | Available Blood Samples"; ?>
-<?php require 'head.php'; ?><style>
+<style>
     body{
     
     background-size: cover;
@@ -28,10 +28,24 @@ $result = mysqli_query($conn, $sql);
 }
 </style>
 
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
 <body>
-    <?php require 'header.php'; ?>
+<body style="color:black">
+<nav class="navbar navbar-expand-md navbar-custom navbar-dark sticky-top mb-4" style="border-bottom: 5px solid black; background-color: black;padding-bottom:10px ;padding-top:10px ">
+<div class="container-fluid">
+  <a class="" href="hospitalpage.html" style="font-size:25px;color:white;font-weight: bold;">BLOOD BANK SYSTEM</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+
+</div>
+</div>
+</nav>
     <div class="container cont">
-        
+        <a href="hospitalpage.html" class="btn btn-info text-center mb-4" title="Click here">Back to home</a>
         <?php require 'message.php'; ?>
         
         <div class="row col-lg-8 col-md-8 col-sm-12 mb-3">

@@ -29,10 +29,21 @@ session_start();
     background-color: white;
 }
 </style>
-<body>
-	<?php require 'header.php'; ?>
-	<div class="container cont">
+<body style="color:black">
+<nav class="navbar navbar-expand-md navbar-custom navbar-dark sticky-top" style="border-bottom: 5px solid black; background-color: black;padding-bottom:10px ;padding-top:10px ">
+<div class="container-fluid">
+  <a class="" href="hospitalpage.html" style="font-size:25px;color:white;font-weight: bold;">BLOOD BANK SYSTEM</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
 
+</div>
+</div>
+</nav>
+	<?php //require 'header.php'; ?>
+	<div class="container cont">
+		<a href="hospitalpage.html" class="btn btn-primary text-center mb-4" title="Click here">Back to home</a>
 		<?php require 'message.php'; ?>
 
 	<table class="table table-responsive table-striped rounded mb-5">
